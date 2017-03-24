@@ -10,7 +10,7 @@ public class EnumeratePermutations2 {
 		enumeratePermutation();
 	}
 	public static void enumeratePermutation(){
-		char[] standard = {'a', 'a', 'b'};
+		char[] standard = {'a', 'a', 'b', 'c'};
 		Map<Character, Integer> map = new HashMap<>();
 		for (char chr : standard) {
 			if (map.containsKey(chr)) {
@@ -28,6 +28,7 @@ public class EnumeratePermutations2 {
 				System.out.print(chr);
 			}
 			System.out.println();
+			return;
 		}
 		for (Map.Entry<Character, Integer> entry : map.entrySet()) {
 			if (entry.getValue() > 0) {
