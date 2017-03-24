@@ -6,7 +6,7 @@ public class NQueen {
 	static int[] solution;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		nQueen(9);
+		nQueen(4);
 	}
 	public static void nQueen(int n) {
 		solution = new int[n];
